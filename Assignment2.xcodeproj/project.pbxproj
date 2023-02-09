@@ -13,6 +13,8 @@
 		D56F093F2995762100AB33DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56F093D2995762100AB33DF /* Main.storyboard */; };
 		D56F09412995762300AB33DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56F09402995762300AB33DF /* Assets.xcassets */; };
 		D56F09442995762300AB33DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56F09422995762300AB33DF /* LaunchScreen.storyboard */; };
+		D56F09502995765100AB33DF /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D56F094C2995765000AB33DF /* maze.cpp */; };
+		D56F09512995765100AB33DF /* DisjointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D56F094E2995765000AB33DF /* DisjointSet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,11 @@
 		D56F09402995762300AB33DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D56F09432995762300AB33DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D56F09452995762300AB33DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56F094B2995764F00AB33DF /* Assignment2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment2-Bridging-Header.h"; sourceTree = "<group>"; };
+		D56F094C2995765000AB33DF /* maze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maze.cpp; sourceTree = "<group>"; };
+		D56F094D2995765000AB33DF /* maze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maze.h; sourceTree = "<group>"; };
+		D56F094E2995765000AB33DF /* DisjointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisjointSet.cpp; sourceTree = "<group>"; };
+		D56F094F2995765100AB33DF /* DisjointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisjointSet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,11 @@
 				D56F09402995762300AB33DF /* Assets.xcassets */,
 				D56F09422995762300AB33DF /* LaunchScreen.storyboard */,
 				D56F09452995762300AB33DF /* Info.plist */,
+				D56F094E2995765000AB33DF /* DisjointSet.cpp */,
+				D56F094F2995765100AB33DF /* DisjointSet.h */,
+				D56F094C2995765000AB33DF /* maze.cpp */,
+				D56F094D2995765000AB33DF /* maze.h */,
+				D56F094B2995764F00AB33DF /* Assignment2-Bridging-Header.h */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 				TargetAttributes = {
 					D56F09332995762100AB33DF = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -140,7 +153,9 @@
 			files = (
 				D56F093C2995762100AB33DF /* ViewController.swift in Sources */,
 				D56F09382995762100AB33DF /* AppDelegate.swift in Sources */,
+				D56F09502995765100AB33DF /* maze.cpp in Sources */,
 				D56F093A2995762100AB33DF /* SceneDelegate.swift in Sources */,
+				D56F09512995765100AB33DF /* DisjointSet.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2SRWHS99HQ;
@@ -303,6 +319,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.btech.Assignment2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment2/Assignment2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2SRWHS99HQ;
@@ -331,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.btech.Assignment2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment2/Assignment2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
