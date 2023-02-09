@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C99BF22995870A00BB1248 /* Renderer.mm in Resources */ = {isa = PBXBuildFile; fileRef = 11C99BF12995870A00BB1248 /* Renderer.mm */; };
 		D56F09382995762100AB33DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F09372995762100AB33DF /* AppDelegate.swift */; };
 		D56F093A2995762100AB33DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F09392995762100AB33DF /* SceneDelegate.swift */; };
 		D56F093C2995762100AB33DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F093B2995762100AB33DF /* ViewController.swift */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11C99BF12995870A00BB1248 /* Renderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
+		11C99BF5299587C800BB1248 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
 		D56F09342995762100AB33DF /* Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56F09372995762100AB33DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D56F09392995762100AB33DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				D56F094C2995765000AB33DF /* maze.cpp */,
 				D56F094D2995765000AB33DF /* maze.h */,
 				D56F094B2995764F00AB33DF /* Assignment2-Bridging-Header.h */,
+				11C99BF12995870A00BB1248 /* Renderer.mm */,
+				11C99BF5299587C800BB1248 /* Renderer.h */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				D56F09442995762300AB33DF /* LaunchScreen.storyboard in Resources */,
 				D56F09412995762300AB33DF /* Assets.xcassets in Resources */,
 				D56F093F2995762100AB33DF /* Main.storyboard in Resources */,
+				11C99BF22995870A00BB1248 /* Renderer.mm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

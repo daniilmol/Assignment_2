@@ -5,9 +5,15 @@
 //  Created by Daniil Molchanov on 2023-02-09.
 //
 
-import UIKit
+import GLKit
 
-class ViewController: UIViewController {
+extension ViewController: GLKViewControllerDelegate {
+    func glkViewControllerUpdate(_ controller: GLKViewController) {
+        
+    }
+}
+
+class ViewController: GLKViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
